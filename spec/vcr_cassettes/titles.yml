@@ -1,0 +1,63 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://api.usatoday.com:80/open/bestsellers/books/titles?api_key=foobar&author=JK%20Rowling&encoding=json
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      p3p: 
+      - CP="CAO CUR ADM DEVa TAIi PSAa PSDa CONi OUR OTRi IND PHY ONL UNI COM NAV DEM", POLICYREF="URI"
+      x-aspnet-version: 
+      - 2.0.50727
+      content-type: 
+      - application/json; charset=utf-8
+      date: 
+      - Tue, 02 Aug 2011 18:55:50 GMT
+      server: 
+      - Microsoft-IIS/7.5
+      x-mashery-responder: 
+      - proxyworker-i-f6699e9b.mashery.com
+      content-length: 
+      - "221"
+      accept-ranges: 
+      - bytes
+      cache-control: 
+      - private
+    body: "{\"APIParameters\":{\"ISBN\":\"\",\"Year\":\"\",\"Month\":\"\",\"Date\":\"\",\"MinYear\":\"\",\"MaxYear\":\"\",\"Title\":\"\",\"Author\":\"JK Rowling\",\"Category\":\"\",\"Class\":\"\",\"ExcludeCurrentWeek\":\"true\",\"RecentWeekAllowance\":\"24\",\"Count\":0},\"Titles\":[]}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://api.usatoday.com:80/open/bestsellers/books/titles?api_key=foobar&author=J.K.%20Rowling&encoding=json
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-aspnet-version: 
+      - 2.0.50727
+      p3p: 
+      - CP="CAO CUR ADM DEVa TAIi PSAa PSDa CONi OUR OTRi IND PHY ONL UNI COM NAV DEM", POLICYREF="URI"
+      content-type: 
+      - application/json; charset=utf-8
+      x-mashery-responder: 
+      - proxyworker-i-3d66f354.mashery.com
+      server: 
+      - Microsoft-IIS/7.5
+      date: 
+      - Tue, 02 Aug 2011 18:56:03 GMT
+      content-length: 
+      - "4128"
+      cache-control: 
+      - private
+      accept-ranges: 
+      - bytes
+    body: "{\"APIParameters\":{\"ISBN\":\"\",\"Year\":\"\",\"Month\":\"\",\"Date\":\"\",\"MinYear\":\"\",\"MaxYear\":\"\",\"Title\":\"\",\"Author\":\"J.K. Rowling\",\"Category\":\"\",\"Class\":\"\",\"ExcludeCurrentWeek\":\"true\",\"RecentWeekAllowance\":\"24\",\"Count\":0},\"Titles\":[{\"Title\":\"Fantastic Beasts & Where to Find Them\",\"TitleAPIUrl\":\"/Titles/9780439295017\",\"Author\":\"Newt Scamander (aka J.K. Rowling)\"},{\"Title\":\"Harry Potter and the Chamber of Secrets\",\"TitleAPIUrl\":\"/Titles/9780439064866\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter and the Chamber of Secrets\",\"TitleAPIUrl\":\"/Titles/9780439064873\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter and the Deathly Hallows\",\"TitleAPIUrl\":\"/Titles/9780545010221\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter and the Deathly Hallows\",\"TitleAPIUrl\":\"/Titles/9780545139700\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter and the Deathly Hallows: Deluxe edition\",\"TitleAPIUrl\":\"/Titles/9780545029377\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter and the Goblet of Fire\",\"TitleAPIUrl\":\"/Titles/9780439139595\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter and the Goblet of Fire\",\"TitleAPIUrl\":\"/Titles/9780439139601\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter and the Half-Blood Prince\",\"TitleAPIUrl\":\"/Titles/9780439784542\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter and the Half-Blood Prince\",\"TitleAPIUrl\":\"/Titles/9780439785969\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter and the Half-Blood Prince: Deluxe Edition\",\"TitleAPIUrl\":\"/Titles/9780439791328\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter and the Order of the Phoenix\",\"TitleAPIUrl\":\"/Titles/9780439358064\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter and the Order of the Phoenix\",\"TitleAPIUrl\":\"/Titles/9780439358071\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter and the Prisoner of Azkaban\",\"TitleAPIUrl\":\"/Titles/9780439136358\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter and the Prisoner of Azkaban\",\"TitleAPIUrl\":\"/Titles/9780439136365\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter and the Sorcerer\\u0027s Stone\",\"TitleAPIUrl\":\"/Titles/9780590353403\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter and the Sorcerer\\u0027s Stone\",\"TitleAPIUrl\":\"/Titles/9780590353427\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter and the Sorcerer\\u0027s Stone Poster Book\",\"TitleAPIUrl\":\"/Titles/9780439286237\",\"Author\":\"J.K. Rowling \"},{\"Title\":\"Harry Potter Box Set: Books 1-3\",\"TitleAPIUrl\":\"/Titles/9780439133166\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter Box Set: Books 1-4\",\"TitleAPIUrl\":\"/Titles/9780439249546\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter Box Set: Books 1-4\",\"TitleAPIUrl\":\"/Titles/9780439434867\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter Box Set: Books 1-5\",\"TitleAPIUrl\":\"/Titles/9780439682589\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter Box Set: Books 1-6\",\"TitleAPIUrl\":\"/Titles/9780439887458\",\"Author\":\"J.K. Rowling\"},{\"Title\":\"Harry Potter Box Set: Books 1-7\",\"TitleAPIUrl\":\"/Titles/9780545044257\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter Box Set: Books 1-7\",\"TitleAPIUrl\":\"/Titles/9780545162074\",\"Author\":\"J.K. Rowling, art by Mary GrandPr\xC3\xA9\"},{\"Title\":\"Harry Potter Schoolbooks\",\"TitleAPIUrl\":\"/Titles/9780439284035\",\"Author\":\"Kennilworthy Whisp (aka J.K. Rowling), Newt Scamander (aka J.K. Rowling)\"},{\"Title\":\"Harry Potter Schoolbooks\",\"TitleAPIUrl\":\"/Titles/9780439321624\",\"Author\":\"Kennilworthy Whisp (aka J.K. Rowling), Newt Scamander (aka J.K. Rowling)\"},{\"Title\":\"Quidditch Through the Ages\",\"TitleAPIUrl\":\"/Titles/9780439295024\",\"Author\":\"Kennilworthy Whisp (aka J.K. Rowling)\"},{\"Title\":\"The Tales of Beedle the Bard\",\"TitleAPIUrl\":\"/Titles/9780545128285\",\"Author\":\"J.K. Rowling\"}]}"
+    http_version: "1.1"

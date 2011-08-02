@@ -1,0 +1,32 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://api.usatoday.com:80/open/bestsellers/books/categories?api_key=foobar&encoding=json&title=Harry%20Potter
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-aspnet-version: 
+      - 2.0.50727
+      p3p: 
+      - CP="CAO CUR ADM DEVa TAIi PSAa PSDa CONi OUR OTRi IND PHY ONL UNI COM NAV DEM", POLICYREF="URI"
+      content-type: 
+      - application/json; charset=utf-8
+      x-mashery-responder: 
+      - proxyworker-i-f6699e9b.mashery.com
+      server: 
+      - Microsoft-IIS/7.5
+      date: 
+      - Tue, 02 Aug 2011 18:53:58 GMT
+      content-length: 
+      - "314"
+      cache-control: 
+      - private
+      accept-ranges: 
+      - bytes
+    body: "{\"APIParameters\":{\"ISBN\":\"\",\"Year\":\"\",\"Month\":\"\",\"Date\":\"\",\"MinYear\":\"\",\"MaxYear\":\"\",\"Title\":\"Harry Potter\",\"Author\":\"\",\"Category\":\"\",\"Class\":\"\",\"ExcludeCurrentWeek\":\"true\",\"RecentWeekAllowance\":\"24\",\"Count\":0},\"Categories\":[{\"CategoryID\":140,\"CategoryName\":\"Youth\"},{\"CategoryID\":274,\"CategoryName\":\"Movies/TV\"}]}"
+    http_version: "1.1"
